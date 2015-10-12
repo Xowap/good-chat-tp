@@ -1,0 +1,1 @@
+Search.setIndex({envversion:47,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{Content:0,Pag:0,index:0,modul:0,recherch:0},titles:["Welcome to Good Chat&#8217;s documentation!"],titleterms:{Chat:0,Good:0,Welcom:0,and:0,document:0,indic:0,tabl:0}})
