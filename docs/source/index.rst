@@ -44,6 +44,8 @@ fourni dans ce dépôt.
    :maxdepth: 2
 
    app
+   start
+   stories
 
 Indices and tables
 ==================

@@ -1,0 +1,19 @@
+.gc-submit-form {
+  display: flex;
+  align-items: center;
+}
+.gc-submit-form .message {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 15px;
+}
+.gc-submit-form .message > input {
+  width: 100%;
+}
+.gc-submit-form .button {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.gc-messages-list {
+  margin-top: 30px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good JS Chat</title>
+
+    <link rel="stylesheet"
+          href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet"
+          href="style.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#"
+               class="navbar-brand">Good JS Chat</a>
+        </div>
+
+        <div class="navbar-form navbar-right">
+            <div class="form-group">
+                <input id="name"
+                       type="text"
+                       class="form-control"
+                       placeholder="Your Name">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <form id="messageForm"
+          class="form-inline gc-submit-form">
+        <div class="form-group message">
+            <input id="message"
+                   type="text"
+                   class="form-control"
+                   placeholder="Écris un message..."
+                   autocomplete="off"/>
+        </div>
+        <div class="form-group button">
+            <button class="btn btn-success"
+                    id="submit">Envoyer</button>
+        </div>
+    </form>
+
+    <ul class="list-group gc-messages-list"
+        id="messages-list">
+    </ul>
+</div>
+
+<script type="application/template" id="tpl-message-row">
+    <li class="list-group-item">
+        <h4><span class="user-name"></span> <small class="time"></small></h4>
+        <p class="content"></p>
+    </li>
+</script>
+
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="randname.js"></script>
+<script src="goodchat.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

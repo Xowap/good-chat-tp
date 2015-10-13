@@ -1,0 +1,25 @@
+@import "bower_components/bootstrap/less/variables";
+
+.gc-submit-form {
+  display: flex;
+  align-items: center;
+
+  .message {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: (@grid-gutter-width / 2);
+
+    > input {
+      width: 100%;
+    }
+  }
+
+  .button {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+.gc-messages-list {
+  margin-top: @grid-gutter-width;
+}
