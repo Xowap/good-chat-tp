@@ -75,11 +75,11 @@
 <li class="toctree-l2"><a class="reference internal" href="app.html#maquette">Maquette</a></li>
 <li class="toctree-l2"><a class="reference internal" href="app.html#technologie">Technologie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="app.html#architecture">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.html#bibliotheques">Bibliothèques</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="app.html#goodchat-js">goodchat.js</a></li>
-<li class="toctree-l3"><a class="reference internal" href="app.html#randname-js">randname.js</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="libs.html">Bibliothèques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="libs.html#goodchat-js">goodchat.js</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libs.html#randname-js">randname.js</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">Démarer le TP</a><ul>
@@ -97,26 +97,48 @@
 <li class="toctree-l2"><a class="reference internal" href="#avoir-un-nom-automatique">1. Avoir un nom automatique</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fonctions-a-coder">Fonctions à coder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exemples">Exemples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#definir-la-valeur-d-un-input">Définir la valeur d&#8217;un input</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#changer-son-nom">2. Changer son nom</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Fonctions à coder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Exemples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#surveiller-les-valeurs-d-un-input">Surveiller les valeurs d&#8217;un input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sauvegarder-un-nom-dans-randname">Sauvegarder un nom dans randName</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#voir-les-messages-recus">3. Voir les messages reçus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Fonctions à coder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Fonctions à coder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Exemples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ajouter-un-zero-devant-un-entier">Ajouter un zéro devant un entier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#obtenir-les-heures-d-un-timestamp">Obtenir les heures d&#8217;un timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transformer-un-template-en-noeud-du-dom">Transformer un template en nœud du DOM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inserer-un-element-du-dom-en-premier-sous-un-parent">Insérer un élément du DOM en premier sous un parent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#limiter-le-nombre-d-enfants-a-un-nombre-donne">Limiter le nombre d&#8217;enfants à un nombre donné</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#recevoir-les-message">Recevoir les message</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#envoyer-un-message">4. Envoyer un message</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Fonctions à coder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Fonctions à coder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Exemples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#intercepter-la-soumission-d-un-formulaire">Intercepter la soumission d&#8217;un formulaire</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ne-pas-envoyer-de-message-quand-le-message-ou-le-nom-est-vide">5. Ne pas envoyer de message quand le message ou le nom est vide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Fonctions à coder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Fonctions à coder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -186,8 +208,17 @@ automatiquement généré. Ce nom est enregistré pour la durée de la session.<
 <h3>Documentation<a class="headerlink" href="#documentation" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">Document.querySelector()</a></li>
-<li><a class="reference internal" href="app.html#randName.getNameForSession" title="randName.getNameForSession"><code class="xref js js-func docutils literal"><span class="pre">randName.getNameForSession()</span></code></a></li>
+<li><a class="reference internal" href="libs.html#randName.getNameForSession" title="randName.getNameForSession"><code class="xref js js-func docutils literal"><span class="pre">randName.getNameForSession()</span></code></a></li>
 </ul>
+</div>
+<div class="section" id="exemples">
+<h3>Exemples<a class="headerlink" href="#exemples" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="definir-la-valeur-d-un-input">
+<h4>Définir la valeur d&#8217;un input<a class="headerlink" href="#definir-la-valeur-d-un-input" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre>  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#my-input&#39;</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="changer-son-nom">
@@ -207,15 +238,33 @@ quand il est changé</li>
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">EventTarget.addEventListener()</a></li>
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/Events/keyup">keyup</a></li>
 <li><a class="reference external" href="https://developer.mozilla.org/en/docs/Web/API/HTMLInputElement">HTMLInputElement</a> (s&#8217;intéresser à <code class="docutils literal"><span class="pre">value</span></code>)</li>
-<li><a class="reference internal" href="app.html#randName.setName" title="randName.setName"><code class="xref js js-func docutils literal"><span class="pre">randName.setName()</span></code></a></li>
+<li><a class="reference internal" href="libs.html#randName.setName" title="randName.setName"><code class="xref js js-func docutils literal"><span class="pre">randName.setName()</span></code></a></li>
 </ul>
+</div>
+<div class="section" id="id3">
+<h3>Exemples<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="surveiller-les-valeurs-d-un-input">
+<h4>Surveiller les valeurs d&#8217;un input<a class="headerlink" href="#surveiller-les-valeurs-d-un-input" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#my-input&#39;</span><span class="p">);</span>
+<span class="nx">input</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;new value&#39;</span><span class="p">,</span> <span class="nx">input</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sauvegarder-un-nom-dans-randname">
+<h4>Sauvegarder un nom dans randName<a class="headerlink" href="#sauvegarder-un-nom-dans-randname" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">randName</span><span class="p">.</span><span class="nx">setName</span><span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="voir-les-messages-recus">
 <h2>3. Voir les messages reçus<a class="headerlink" href="#voir-les-messages-recus" title="Lien permanent vers ce titre">¶</a></h2>
 <p>À la réception d&#8217;un message, il est ajouté à la liste des messages reçus.</p>
-<div class="section" id="id3">
-<h3>Fonctions à coder<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id4">
+<h3>Fonctions à coder<a class="headerlink" href="#id4" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li>Une fonction qui, à partir d&#8217;un timestamp Unix en millisecondes, retourne
 l&#8217;heure au format &#8220;hh:mm&#8221;. Les messages reçus ont comme attribut <code class="docutils literal"><span class="pre">time</span></code>
@@ -233,8 +282,8 @@ affichés ne dépasse pas un nombre prédéterminé (10 par exemple).</li>
 messages.</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h3>Documentation<a class="headerlink" href="#id4" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id5">
+<h3>Documentation<a class="headerlink" href="#id5" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours">Date.getHours()</a>
 Retourne les heures d&#8217;un objet <code class="docutils literal"><span class="pre">Date</span></code>.</li>
@@ -252,10 +301,79 @@ insérer un élément en début de liste, par exemple.</li>
 Supprime l&#8217;enfant spécifié de la liste des descendants.</li>
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/childElementCount">ParentNode.childElementCount</a>
 Compte le nombre d&#8217;enfants d&#8217;un nœud du DOM.</li>
-<li><a class="reference internal" href="app.html#goodChat.onMessage" title="goodChat.onMessage"><code class="xref js js-func docutils literal"><span class="pre">goodChat.onMessage()</span></code></a>
+<li><a class="reference internal" href="libs.html#goodChat.onMessage" title="goodChat.onMessage"><code class="xref js js-func docutils literal"><span class="pre">goodChat.onMessage()</span></code></a>
 Permet d&#8217;enregistrer un callback qui sera appellé à la réception d&#8217;un nouveau
 message.</li>
 </ul>
+</div>
+<div class="section" id="id6">
+<h3>Exemples<a class="headerlink" href="#id6" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="ajouter-un-zero-devant-un-entier">
+<h4>Ajouter un zéro devant un entier<a class="headerlink" href="#ajouter-un-zero-devant-un-entier" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="nx">x</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="obtenir-les-heures-d-un-timestamp">
+<h4>Obtenir les heures d&#8217;un timestamp<a class="headerlink" href="#obtenir-les-heures-d-un-timestamp" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">timestamp</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getHours</span><span class="p">());</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="transformer-un-template-en-noeud-du-dom">
+<h4>Transformer un template en nœud du DOM<a class="headerlink" href="#transformer-un-template-en-noeud-du-dom" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-html"><div class="highlight"><pre>&lt;script type=&quot;application/template&quot; id=&quot;my-template&quot;&gt;
+    &lt;h1 class=&quot;my-title&quot;&gt;&lt;/h1&gt;
+&lt;/script&gt;
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">newItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+<span class="nx">newItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#my-template&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+<span class="nx">newItem</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.my-title&#39;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Foo Title&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="inserer-un-element-du-dom-en-premier-sous-un-parent">
+<h4>Insérer un élément du DOM en premier sous un parent<a class="headerlink" href="#inserer-un-element-du-dom-en-premier-sous-un-parent" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;my-list&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Un item<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Et un autre<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">newItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">),</span>
+    <span class="nx">list</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#my-list&#39;</span><span class="p">);</span>
+<span class="nx">newItem</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Foo Item&#39;</span><span class="p">;</span>
+
+<span class="hll"><span class="nx">list</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">newItem</span><span class="p">,</span> <span class="nx">list</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">);</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="limiter-le-nombre-d-enfants-a-un-nombre-donne">
+<h4>Limiter le nombre d&#8217;enfants à un nombre donné<a class="headerlink" href="#limiter-le-nombre-d-enfants-a-un-nombre-donne" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;#my-node&#39;</span><span class="p">);</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">childElementCount</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">node</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="recevoir-les-message">
+<h4>Recevoir les message<a class="headerlink" href="#recevoir-les-message" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">goodChat</span><span class="p">.</span><span class="nx">onMessage</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;nom d\&#39;utilisateur&#39;</span><span class="p">,</span> <span class="nx">message</span><span class="p">.</span><span class="nx">userName</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">message</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">time</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="envoyer-un-message">
@@ -263,20 +381,34 @@ message.</li>
 <p>Si l&#8217;utilisateur tape un message puis qu&#8217;il tape la touche <cite>Entrée</cite> ou qu&#8217;il
 clique sur le bouton <cite>Envoyer</cite>, alors le message saisi est envoyé à tout le
 monde, puis affiché.</p>
-<div class="section" id="id5">
-<h3>Fonctions à coder<a class="headerlink" href="#id5" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id7">
+<h3>Fonctions à coder<a class="headerlink" href="#id7" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li>Une fonction qui réagit à la soumission du formulaire pour envoyer le message
 via l&#8217;API <code class="docutils literal"><span class="pre">goodChat</span></code>.</li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>Documentation<a class="headerlink" href="#id6" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id8">
+<h3>Documentation<a class="headerlink" href="#id8" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://developer.mozilla.org/en/docs/Web/API/Event/preventDefault">Event.preventDefault()</a></li>
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/Events/submit">submit</a></li>
-<li><a class="reference internal" href="app.html#goodChat.sendMessage" title="goodChat.sendMessage"><code class="xref js js-func docutils literal"><span class="pre">goodChat.sendMessage()</span></code></a></li>
+<li><a class="reference internal" href="libs.html#goodChat.sendMessage" title="goodChat.sendMessage"><code class="xref js js-func docutils literal"><span class="pre">goodChat.sendMessage()</span></code></a></li>
 </ul>
+</div>
+<div class="section" id="id9">
+<h3>Exemples<a class="headerlink" href="#id9" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="intercepter-la-soumission-d-un-formulaire">
+<h4>Intercepter la soumission d&#8217;un formulaire<a class="headerlink" href="#intercepter-la-soumission-d-un-formulaire" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#my-form&#39;</span><span class="p">);</span>
+
+<span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;This form is no longer being submitted&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="ne-pas-envoyer-de-message-quand-le-message-ou-le-nom-est-vide">
@@ -284,8 +416,8 @@ via l&#8217;API <code class="docutils literal"><span class="pre">goodChat</span>
 <p>Si l&#8217;utilisateur n&#8217;a pas saisi de message ou de nom, alors il faut désactiver
 l&#8217;envoi du formulaire et ajouter la classe <code class="docutils literal"><span class="pre">disabled</span></code> au bouton d&#8217;envoi pour
 qu&#8217;il comprenne qu&#8217;il ne peut pas cliquer dessus.</p>
-<div class="section" id="id7">
-<h3>Fonctions à coder<a class="headerlink" href="#id7" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id10">
+<h3>Fonctions à coder<a class="headerlink" href="#id10" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li>Une fonction qui surveille les modifications du message.</li>
 <li>Une fonction qui vérifie qu&#8217;il y a bien du contenu dans les champs de message
@@ -295,8 +427,8 @@ d&#8217;envoi de message). Appeller cette fonction à chaque modification du nom
 d&#8217;utilisateur et du message.</li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h3>Documentation<a class="headerlink" href="#id8" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="id11">
+<h3>Documentation<a class="headerlink" href="#id11" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">Element.classList</a></li>
 </ul>

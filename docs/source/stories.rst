@@ -31,6 +31,17 @@ Documentation
 - `Document.querySelector() <https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector>`_
 - :js:func:`randName.getNameForSession()`
 
+Exemples
+~~~~~~~~
+
+Définir la valeur d'un input
+++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+   :emphasize-lines: 3,5
+
+     document.querySelector('#my-input').value = 'foo';
+
 2. Changer son nom
 ------------------
 
@@ -50,6 +61,26 @@ Documentation
 - `keyup <https://developer.mozilla.org/en-US/docs/Web/Events/keyup>`_
 - `HTMLInputElement <https://developer.mozilla.org/en/docs/Web/API/HTMLInputElement>`_ (s'intéresser à ``value``)
 - :js:func:`randName.setName()`
+
+Exemples
+~~~~~~~~
+
+Surveiller les valeurs d'un input
++++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   var input = document.querySelector('#my-input');
+   input.addEventListener('keyup', function () {
+       console.log('new value', input.value);
+   });
+
+Sauvegarder un nom dans randName
+++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   randName.setName('Alice');
 
 3. Voir les messages reçus
 --------------------------
@@ -97,6 +128,84 @@ Documentation
   Permet d'enregistrer un callback qui sera appellé à la réception d'un nouveau
   message.
 
+Exemples
+~~~~~~~~
+
+Ajouter un zéro devant un entier
+++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   if (x < 10) {
+       return '0' + x;
+   }
+
+   return x.toString()
+
+Obtenir les heures d'un timestamp
++++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   var date = new Date(timestamp);
+   console.log(date.getHours());
+
+Transformer un template en nœud du DOM
+++++++++++++++++++++++++++++++++++++++
+
+.. code-block:: html
+
+   <script type="application/template" id="my-template">
+       <h1 class="my-title"></h1>
+   </script>
+
+.. code-block:: javascript
+
+   var newItem = document.createElement('div');
+   newItem = document.querySelector('#my-template').innerHTML;
+   newItem.querySelector('.my-title').textContent = 'Foo Title';
+
+Insérer un élément du DOM en premier sous un parent
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. code-block:: html
+
+   <ul id="my-list">
+       <li>Un item</li>
+       <li>Et un autre</li>
+   </ul>
+
+.. code-block:: javascript
+   :emphasize-lines: 5
+
+   var newItem = document.createElement('li'),
+       list = document.querySelector('#my-list');
+   newItem.textContent = 'Foo Item';
+
+   list.insertBefore(newItem, list.firstChild);
+
+Limiter le nombre d'enfants à un nombre donné
++++++++++++++++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   var node = document.createElement('#my-node');
+
+   while (node.childElementCount > 10) {
+       node.removeChild(node.lastElementChild);
+   }
+
+Recevoir les message
+++++++++++++++++++++
+
+.. code-block:: javascript
+
+   goodChat.onMessage(function (message) {
+       console.log('nom d\'utilisateur', message.userName);
+       console.log('message', message.message);
+       console.log('date', new Date(message.time));
+   });
+
 4. Envoyer un message
 ---------------------
 
@@ -116,6 +225,21 @@ Documentation
 - `Event.preventDefault() <https://developer.mozilla.org/en/docs/Web/API/Event/preventDefault>`_
 - `submit <https://developer.mozilla.org/en-US/docs/Web/Events/submit>`_
 - :js:func:`goodChat.sendMessage()`
+
+Exemples
+~~~~~~~~
+
+Intercepter la soumission d'un formulaire
++++++++++++++++++++++++++++++++++++++++++
+
+.. code-block:: javascript
+
+   var form = document.querySelector('#my-form');
+
+   form.addEventListener('submit', function (event) {
+       event.preventDefault();
+       console.log('This form is no longer being submitted');
+   });
 
 5. Ne pas envoyer de message quand le message ou le nom est vide
 ----------------------------------------------------------------
