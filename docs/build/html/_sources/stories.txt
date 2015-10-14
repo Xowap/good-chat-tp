@@ -104,9 +104,37 @@ Si l'utilisateur tape un message puis qu'il tape la touche `Entrée` ou qu'il
 clique sur le bouton `Envoyer`, alors le message saisi est envoyé à tout le
 monde, puis affiché.
 
+Fonctions à coder
+~~~~~~~~~~~~~~~~~
+
+- Une fonction qui réagit à la soumission du formulaire pour envoyer le message
+  via l'API ``goodChat``.
+
+Documentation
+~~~~~~~~~~~~~
+
+- `Event.preventDefault() <https://developer.mozilla.org/en/docs/Web/API/Event/preventDefault>`_
+- `submit <https://developer.mozilla.org/en-US/docs/Web/Events/submit>`_
+- :js:func:`goodChat.sendMessage()`
+
 5. Ne pas envoyer de message quand le message ou le nom est vide
 ----------------------------------------------------------------
 
 Si l'utilisateur n'a pas saisi de message ou de nom, alors il faut désactiver
 l'envoi du formulaire et ajouter la classe ``disabled`` au bouton d'envoi pour
 qu'il comprenne qu'il ne peut pas cliquer dessus.
+
+Fonctions à coder
+~~~~~~~~~~~~~~~~~
+
+- Une fonction qui surveille les modifications du message.
+- Une fonction qui vérifie qu'il y a bien du contenu dans les champs de message
+  et de nom d'utilisateur. Si non, alors elle ajoute une classe ``disabled`` au
+  bouton du formulaire, et désactive l'envoi (pour cela, modifier la fonction
+  d'envoi de message). Appeller cette fonction à chaque modification du nom
+  d'utilisateur et du message.
+
+Documentation
+~~~~~~~~~~~~~
+
+- `Element.classList <https://developer.mozilla.org/en-US/docs/Web/API/Element/classList>`_

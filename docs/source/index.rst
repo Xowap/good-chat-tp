@@ -44,6 +44,7 @@ fourni dans ce dépôt.
    :maxdepth: 2
 
    app
+   libs
    start
    stories
 
