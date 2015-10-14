@@ -47,6 +47,7 @@ fourni dans ce dépôt.
    libs
    start
    stories
+   style
 
 Indices and tables
 ==================

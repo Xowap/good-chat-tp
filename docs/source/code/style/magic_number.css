@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.gmp-box {
+  @box-color: #aaa;
+  @box-to-top: 10px;
+  @box-to-left: @box-to-top;
+  @box-size: 300px;
+  @box-padding: 20px;
+
+  @bottom-stuff-width: (@box-size - 2 * @box-padding) * 2 / 3;
+  @bottom-stuff-height: @box-size / 3;
+  @bottom-stuff-border-size: 4px;
+  @bottom-stuff-color: red;
+
+  @right-stuff-border-size: 13px;
+  @right-stuff-color: blue;
+
+  position: absolute;
+  top: @box-to-top;
+  left: @box-to-left;
+
+  .size(@box-size);
+
+  background-color: @box-color;
+
+  .bottom-stuff {
+    position: absolute;
+    left: @box-padding;
+    bottom: @box-padding - @bottom-stuff-border-size;
+
+    width: @bottom-stuff-width;
+    height: @bottom-stuff-height;
+
+    background-color: lighten(@bottom-stuff-color, 20%);
+    border-bottom: @bottom-stuff-border-size @bottom-stuff-color solid;
+  }
+
+  .right-stuff {
+    position: absolute;
+    right: @box-padding;
+    bottom: @box-padding - @right-stuff-border-size;
+    top: @box-padding;
+
+    width: @box-size - (@box-padding * 2) - @bottom-stuff-width;
+
+    background-color: lighten(@right-stuff-color, 20%);
+    border-bottom: @right-stuff-border-size @right-stuff-color solid;
+  }
+}
